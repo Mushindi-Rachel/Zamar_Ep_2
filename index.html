@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zamar Experience -EP2 Registration</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/WhatsApp Image 2025-10-27 at 21.44.00.jpeg" alt="Youth Ablaze Logo" class="logo">
+        <h2>Zamar Experience -EP2 Registration</h2>
+        <p>Join us for an unforgettable experience of faith, growth, and fellowship.</p>
+        <p style="color: #e2a809;"><b><i>#God's Faithfulness</i></b></p>
+        <p style="color: #e2a809;"><b><i>...Deutronomy 7:9</i></b></p>
+
+        <form id="registrationForm" method="POST">
+            <!-- Personal Info -->
+            <div class="section">
+                <h2>Basic Info</h2>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="phone">Phone</label> (Preferrably whatsapp number)
+                <input type="tel" id="phone" name="phone" required />
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+          <option value="">Select...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+                <label for="age">Age</label>
+                <select id="gender" name="gender" required>
+          <option value="">Select...</option>
+          <option value="under18">Under 18</option>
+          <option value="18-25">18 - 25 years</option>
+          <option value="18-25">26 - 35 years</option>
+          <option value="18-25">36 - 45 years</option>
+          <option value="18-25">46 years and above</option>
+        </select>
+
+            </div>
+
+            <!-- Church Info -->
+            <div class="section">
+                <h2>Church / Ministry Info</h2>
+                <label for="church">Name of your church or ministry</label>
+                <input type="text" id="church" name="church" />
+
+                <button type="submit">Register Now</button>
+
+        </form>
+        </div>
+
+        <script src="functions.js"></script>
+</body>
+
+</html>

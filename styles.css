@@ -1,0 +1,168 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(8, 8, 8, 0.3)), url("./images/WhatsApp Image 2025-10-27 at 21.43.09.jpeg") no-repeat center center/cover;
+    backdrop-filter: blur(12px);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+    margin: 15px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 140px;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 22px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin: 12px 0 6px;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #cce209;
+    box-shadow: 0 0 8px rgba(97, 44, 1, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #cce209, rgba(31, 19, 0, 0.4));
+    border: none;
+    border-radius: 12px;
+    color: rgb(22, 12, 12);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+#successMessage {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+
+/* Dropdown Styles */
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    max-height: 220px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-content label:hover {
+    background: #f5f5f5;
+}
+
+
+/* Mobile responsiveness */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 18px;
+        border-radius: 14px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p,
+    label {
+        font-size: 13px;
+    }
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
